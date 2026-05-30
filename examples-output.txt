@@ -1,0 +1,37 @@
+### CoinGecko Simple Price API
+{"bitcoin":{"usd":73510},"ethereum":{"usd":2014.34}}
+### Open-Meteo Forecast API
+{"latitude":10.790861,"longitude":106.6313,"generationtime_ms":0.08022785186767578,"utc_offset_seconds":0,"timezone":"GMT","timezone_abbreviation":"GMT","elevation":6.0,"current_units":{"time":"iso8601","interval":"seconds","temperature_2m":"°C","precipitation":"mm","wind_speed_10m":"km/h"},"current":{"time":"2026-05-30T09:45","interval":900,"temperature_2m":27.9,"precipitation":0.10,"wind_speed_10m":5.4}}
+### Hacker News Algolia Search API
+{"exhaustive":{"nbHits":false,"typo":false},"exhaustiveNbHits":false,"exhaustiveTypo":false,"hits":[{"_highlightResult":{"author":{"matchLevel":"none","matchedWords":[],"value":"scottshambaugh"},"story_text":{"fullyHighlighted":false,"matchLevel":"full","matchedWords":["ai","agents"],"value":"Previously: <i><em>AI</em> <em>agent</em> opens a PR write a blogpost to shames the maintainer who closes it</i> - <a href=\"https://news.ycombinator.com/item?id=46987559\">https://news.ycombinator.com/item?id=46987559</a> - Feb 2026 (582 comments)"},"title":{"fullyHighlighted":false,"matchLevel":"full","matchedWords":["ai","agents"],"value":"An <em>AI</em> <em>agent</em> published a hit piece on me"},"url":{"fullyHighlighted":false,"matchLevel":"full","matchedWords":["ai","agents"],"value":"https://theshamblog.com/an-<em>ai</em>-<em>agent</em>-published-a-hit-piece-on-me/"}},"_tags":["story","author_scottshambaugh","story_46990729"],"author":"scottshambaugh","children":[46990825,46990826,46990857,46990868,46990886,46990904,46990912,46990961,46990971,46990975,46990979,46990989,46990995,46991009,46991012,46991024,46991025,46991046,46991050,46991081,46991083,46991104,46991108,46991109,46991127,4
+### Wikipedia REST Summary API
+{"type":"standard","title":"Artificial intelligence","displaytitle":"<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Artificial intelligence</span></span>","namespace":{"id":0,"text":""},"wikibase_item":"Q11660","titles":{"canonical":"Artificial_intelligence","normalized":"Artificial intelligence","display":"<span lang=\"en\" dir=\"ltr\"><span class=\"mw-page-title-main\">Artificial intelligence</span></span>"},"pageid":1164,"lang":"en","dir":"ltr","revision":"1356750116","tid":"347de6b4-5b7a-11f1-a771-0a6cb7bdc046","timestamp":"2026-05-29T16:19:45Z","description":"Intelligence of machines","description_source":"local","content_urls":{"desktop":{"page":"https://en.wikipedia.org/wiki/Artificial_intelligence","revisions":"https://en.wikipedia.org/wiki/Artificial_intelligence?action=history","edit":"https://en.wikipedia.org/wiki/Artificial_intelligence?action=edit","talk":"https://en.wikipedia.org/wiki/Talk:Artificial_intelligence"},"mobile":{"page":"https://en.wikipedia.org/wiki/Artificial_intelligence","revisions":"https://en.wikipedia.org/wiki/Special:History/Artificial_intelligence","edit":"https://en.wikipedia.org/wiki/Artificial_intelligence?action=edit","talk":
+### GitHub Public REST API
+{
+  "id": 1103012935,
+  "node_id": "R_kgDOQb6kRw",
+  "name": "openclaw",
+  "full_name": "openclaw/openclaw",
+  "private": false,
+  "owner": {
+    "login": "openclaw",
+    "id": 252820863,
+    "node_id": "O_kgDODxG9fw",
+    "avatar_url": "https://avatars.githubusercontent.com/u/252820863?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/openclaw",
+    "html_url": "https://github.com/openclaw",
+    "followers_url": "https://api.github.com/users/openclaw/followers",
+    "following_url": "https://api.github.com/users/openclaw/following{/other_user}",
+    "gists_url": "https://api.github.com/users/openclaw/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/openclaw/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/openclaw/subscriptions",
+    "organizations_url": "https://api.github.com/users/openclaw/orgs",
+    "repos_url": "https://api.github.com/users/openclaw/repos",
+    "events_url": "https://api.github.com/users/openclaw/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/openclaw/received_events",
+    "type": "Organization",
+    "user_view_type": "public",
+    "site_admin": false
+  },
+  "htm

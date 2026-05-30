@@ -1,0 +1,85 @@
+{
+  "checked_at": "2026-05-30T09:55:31.759705+00:00",
+  "apis": [
+    {
+      "name": "CoinGecko Simple Price API",
+      "category": "crypto_prices",
+      "url": "https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd",
+      "why_agent_usable": "Returns live crypto prices without an API key; useful for trading, treasury, bounty valuation, and market-context agents.",
+      "curl": "curl -s 'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin,ethereum&vs_currencies=usd'",
+      "expected_fields": [
+        "bitcoin.usd",
+        "ethereum.usd"
+      ],
+      "tested_at": "2026-05-30T09:55:28.270222+00:00",
+      "test_ok": true,
+      "test_status": "json_ok",
+      "response_preview": "{\"bitcoin\":{\"usd\":73510},\"ethereum\":{\"usd\":2014.34}}"
+    },
+    {
+      "name": "Open-Meteo Forecast API",
+      "category": "weather",
+      "url": "https://api.open-meteo.com/v1/forecast?latitude=10.8231&longitude=106.6297&current=temperature_2m,precipitation,wind_speed_10m",
+      "why_agent_usable": "No-auth weather/current conditions endpoint; useful for travel, logistics, reminders, and local planning agents.",
+      "curl": "curl -s 'https://api.open-meteo.com/v1/forecast?latitude=10.8231&longitude=106.6297&current=temperature_2m,precipitation,wind_speed_10m'",
+      "expected_fields": [
+        "current.temperature_2m",
+        "current.precipitation",
+        "current.wind_speed_10m"
+      ],
+      "tested_at": "2026-05-30T09:55:30.195678+00:00",
+      "test_ok": true,
+      "test_status": "json_ok",
+      "response_preview": "{\"latitude\":10.790861,\"longitude\":106.6313,\"generationtime_ms\":0.04589557647705078,\"utc_offset_seconds\":0,\"timezone\":\"GMT\",\"timezone_abbreviation\":\"GMT\",\"elevation\":6.0,\"current_units\":{\"time\":\"iso8601\",\"interval\":\"seconds\",\"temperature_2m\":\"°C\",\"precipitation\":\"mm\",\"wind_speed_10m\":\"km/h\"},\"current\":{\"time\":\"2026-05-30T09:45\",\"interval\":900,\"temperature_2m\":27.9,\"precipitation\":0.10,\"wind_speed_10m\":5.4}}"
+    },
+    {
+      "name": "Hacker News Algolia Search API",
+      "category": "news_search",
+      "url": "https://hn.algolia.com/api/v1/search?query=ai%20agents&tags=story&hitsPerPage=3",
+      "why_agent_usable": "No-auth search over Hacker News stories; useful for trend scouting, link discovery, and tech research agents.",
+      "curl": "curl -s 'https://hn.algolia.com/api/v1/search?query=ai%20agents&tags=story&hitsPerPage=3'",
+      "expected_fields": [
+        "hits[].title",
+        "hits[].url",
+        "hits[].points"
+      ],
+      "tested_at": "2026-05-30T09:55:30.832656+00:00",
+      "test_ok": true,
+      "test_status": "json_ok",
+      "response_preview": "{\"exhaustive\":{\"nbHits\":false,\"typo\":false},\"exhaustiveNbHits\":false,\"exhaustiveTypo\":false,\"hits\":[{\"_highlightResult\":{\"author\":{\"matchLevel\":\"none\",\"matchedWords\":[],\"value\":\"scottshambaugh\"},\"story_text\":{\"fullyHighlighted\":false,\"matchLevel\":\"full\",\"matchedWords\":[\"ai\",\"agents\"],\"value\":\"Previously: <i><em>AI</em> <em>agent</em> opens a PR write a blogpost to shames the maintainer who closes it</i> - <a href=\\\"https://news.ycombinator.com/item?id=46987559\\\">https://news.ycombinator.com/item?id=46987559</a> - Feb 2026 (582 comments)\"},\"title\":{\"fullyHighlighted\":false,\"matchLevel\":\"full\",\"matchedWords\":[\"ai\",\"agents\"],\"value\":\"An <em>AI</em> <em>agent</em> published a hit piece on me\"},\"url\":{\"fullyHighlighted\":false,\"matchLevel\":\"full\",\"matchedWords\":[\"ai\",\"agents\"],\"value\":\"https://theshamblog.com/an-<em>ai</em>-<em>agent</em>-published-a-hit-piece-on-me/\"}},\"_tags\":[\"story\",\"author_scottshambaugh\",\"story_46990729\"],\"author\":\"scottshambaugh\",\"children\":[46990825,46990826,46990857,46990868,46990886,46990904,46990912,46990961,46990971,46990975,46990979,46990989,46990995,46991009,46991012,46991024,46991025,46991046,46991050,46991081,46991083,46991104,46991108,46991109,46991127,4"
+    },
+    {
+      "name": "Wikipedia REST Summary API",
+      "category": "encyclopedia",
+      "url": "https://en.wikipedia.org/api/rest_v1/page/summary/Artificial_intelligence",
+      "why_agent_usable": "No-auth encyclopedia summary endpoint; useful for quick background context and citation discovery.",
+      "curl": "curl -s -H 'User-Agent: sanek-agent-api-research/1.0' 'https://en.wikipedia.org/api/rest_v1/page/summary/Artificial_intelligence'",
+      "expected_fields": [
+        "title",
+        "extract",
+        "content_urls.desktop.page"
+      ],
+      "tested_at": "2026-05-30T09:55:31.195802+00:00",
+      "test_ok": true,
+      "test_status": "json_ok",
+      "response_preview": "{\"type\":\"standard\",\"title\":\"Artificial intelligence\",\"displaytitle\":\"<span lang=\\\"en\\\" dir=\\\"ltr\\\"><span class=\\\"mw-page-title-main\\\">Artificial intelligence</span></span>\",\"namespace\":{\"id\":0,\"text\":\"\"},\"wikibase_item\":\"Q11660\",\"titles\":{\"canonical\":\"Artificial_intelligence\",\"normalized\":\"Artificial intelligence\",\"display\":\"<span lang=\\\"en\\\" dir=\\\"ltr\\\"><span class=\\\"mw-page-title-main\\\">Artificial intelligence</span></span>\"},\"pageid\":1164,\"lang\":\"en\",\"dir\":\"ltr\",\"revision\":\"1356750116\",\"tid\":\"347de6b4-5b7a-11f1-a771-0a6cb7bdc046\",\"timestamp\":\"2026-05-29T16:19:45Z\",\"description\":\"Intelligence of machines\",\"description_source\":\"local\",\"content_urls\":{\"desktop\":{\"page\":\"https://en.wikipedia.org/wiki/Artificial_intelligence\",\"revisions\":\"https://en.wikipedia.org/wiki/Artificial_intelligence?action=history\",\"edit\":\"https://en.wikipedia.org/wiki/Artificial_intelligence?action=edit\",\"talk\":\"https://en.wikipedia.org/wiki/Talk:Artificial_intelligence\"},\"mobile\":{\"page\":\"https://en.wikipedia.org/wiki/Artificial_intelligence\",\"revisions\":\"https://en.wikipedia.org/wiki/Special:History/Artificial_intelligence\",\"edit\":\"https://en.wikipedia.org/wiki/Artificial_intelligence?action=edit\",\"talk\":"
+    },
+    {
+      "name": "GitHub Public REST API",
+      "category": "code_repository_metadata",
+      "url": "https://api.github.com/repos/openclaw/openclaw",
+      "why_agent_usable": "No-auth public repository metadata endpoint; useful for dependency/repo checks, release monitoring, and open-source scouting. Rate-limited but no key required for basic reads.",
+      "curl": "curl -s 'https://api.github.com/repos/openclaw/openclaw'",
+      "expected_fields": [
+        "full_name",
+        "stargazers_count",
+        "updated_at",
+        "html_url"
+      ],
+      "tested_at": "2026-05-30T09:55:31.759517+00:00",
+      "test_ok": true,
+      "test_status": "json_ok",
+      "response_preview": "{\n  \"id\": 1103012935,\n  \"node_id\": \"R_kgDOQb6kRw\",\n  \"name\": \"openclaw\",\n  \"full_name\": \"openclaw/openclaw\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"openclaw\",\n    \"id\": 252820863,\n    \"node_id\": \"O_kgDODxG9fw\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/252820863?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/openclaw\",\n    \"html_url\": \"https://github.com/openclaw\",\n    \"followers_url\": \"https://api.github.com/users/openclaw/followers\",\n    \"following_url\": \"https://api.github.com/users/openclaw/following{/other_user}\",\n    \"gists_url\": \"https://api.github.com/users/openclaw/gists{/gist_id}\",\n    \"starred_url\": \"https://api.github.com/users/openclaw/starred{/owner}{/repo}\",\n    \"subscriptions_url\": \"https://api.github.com/users/openclaw/subscriptions\",\n    \"organizations_url\": \"https://api.github.com/users/openclaw/orgs\",\n    \"repos_url\": \"https://api.github.com/users/openclaw/repos\",\n    \"events_url\": \"https://api.github.com/users/openclaw/events{/privacy}\",\n    \"received_events_url\": \"https://api.github.com/users/openclaw/received_events\",\n    \"type\": \"Organization\",\n    \"user_view_type\": \"public\",\n    \"site_admin\": false\n  },\n  \"htm"
+    }
+  ]
+}
