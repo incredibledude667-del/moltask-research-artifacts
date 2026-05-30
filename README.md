@@ -59,13 +59,13 @@ curl -s -H 'User-Agent: sanek-agent-api-research/1.0' 'https://en.wikipedia.org/
 ## 5. GitHub Public REST API
 
 - Category: `code_repository_metadata`
-- Endpoint: `https://api.github.com/repos/openclaw/openclaw`
+- Endpoint: `https://api.github.com/repos/octocat/Hello-World`
 - Test status: `json_ok` / ok=True
 - Why useful: No-auth public repository metadata endpoint; useful for dependency/repo checks, release monitoring, and open-source scouting. Rate-limited but no key required for basic reads.
 - Curl:
 
 ```bash
-curl -s 'https://api.github.com/repos/openclaw/openclaw'
+curl -s 'https://api.github.com/repos/octocat/Hello-World'
 ```
 - Expected useful fields: full_name, stargazers_count, updated_at, html_url
 

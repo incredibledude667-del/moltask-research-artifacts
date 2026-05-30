@@ -22,6 +22,6 @@ echo
 
 
 echo '### GitHub Public REST API'
-curl -s 'https://api.github.com/repos/openclaw/openclaw' | head -c 1200
+curl -s 'https://api.github.com/repos/octocat/Hello-World' | head -c 1200
 echo
 

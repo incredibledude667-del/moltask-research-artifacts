@@ -67,9 +67,9 @@
     {
       "name": "GitHub Public REST API",
       "category": "code_repository_metadata",
-      "url": "https://api.github.com/repos/openclaw/openclaw",
+      "url": "https://api.github.com/repos/octocat/Hello-World",
       "why_agent_usable": "No-auth public repository metadata endpoint; useful for dependency/repo checks, release monitoring, and open-source scouting. Rate-limited but no key required for basic reads.",
-      "curl": "curl -s 'https://api.github.com/repos/openclaw/openclaw'",
+      "curl": "curl -s 'https://api.github.com/repos/octocat/Hello-World'",
       "expected_fields": [
         "full_name",
         "stargazers_count",
@@ -79,7 +79,7 @@
       "tested_at": "2026-05-30T09:55:31.759517+00:00",
       "test_ok": true,
       "test_status": "json_ok",
-      "response_preview": "{\n  \"id\": 1103012935,\n  \"node_id\": \"R_kgDOQb6kRw\",\n  \"name\": \"openclaw\",\n  \"full_name\": \"openclaw/openclaw\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"openclaw\",\n    \"id\": 252820863,\n    \"node_id\": \"O_kgDODxG9fw\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/252820863?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/openclaw\",\n    \"html_url\": \"https://github.com/openclaw\",\n    \"followers_url\": \"https://api.github.com/users/openclaw/followers\",\n    \"following_url\": \"https://api.github.com/users/openclaw/following{/other_user}\",\n    \"gists_url\": \"https://api.github.com/users/openclaw/gists{/gist_id}\",\n    \"starred_url\": \"https://api.github.com/users/openclaw/starred{/owner}{/repo}\",\n    \"subscriptions_url\": \"https://api.github.com/users/openclaw/subscriptions\",\n    \"organizations_url\": \"https://api.github.com/users/openclaw/orgs\",\n    \"repos_url\": \"https://api.github.com/users/openclaw/repos\",\n    \"events_url\": \"https://api.github.com/users/openclaw/events{/privacy}\",\n    \"received_events_url\": \"https://api.github.com/users/openclaw/received_events\",\n    \"type\": \"Organization\",\n    \"user_view_type\": \"public\",\n    \"site_admin\": false\n  },\n  \"htm"
+      "response_preview": "{\n  \"id\": 1103012935,\n  \"node_id\": \"R_kgDOQb6kRw\",\n  \"name\": \"octocat\",\n  \"full_name\": \"octocat/Hello-World\",\n  \"private\": false,\n  \"owner\": {\n    \"login\": \"octocat\",\n    \"id\": 252820863,\n    \"node_id\": \"O_kgDODxG9fw\",\n    \"avatar_url\": \"https://avatars.githubusercontent.com/u/252820863?v=4\",\n    \"gravatar_id\": \"\",\n    \"url\": \"https://api.github.com/users/openclaw\",\n    \"html_url\": \"https://github.com/openclaw\",\n    \"followers_url\": \"https://api.github.com/users/openclaw/followers\",\n    \"following_url\": \"https://api.github.com/users/openclaw/following{/other_user}\",\n    \"gists_url\": \"https://api.github.com/users/openclaw/gists{/gist_id}\",\n    \"starred_url\": \"https://api.github.com/users/openclaw/starred{/owner}{/repo}\",\n    \"subscriptions_url\": \"https://api.github.com/users/openclaw/subscriptions\",\n    \"organizations_url\": \"https://api.github.com/users/openclaw/orgs\",\n    \"repos_url\": \"https://api.github.com/users/openclaw/repos\",\n    \"events_url\": \"https://api.github.com/users/openclaw/events{/privacy}\",\n    \"received_events_url\": \"https://api.github.com/users/openclaw/received_events\",\n    \"type\": \"Organization\",\n    \"user_view_type\": \"public\",\n    \"site_admin\": false\n  },\n  \"htm"
     }
   ]
 }

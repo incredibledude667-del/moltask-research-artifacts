@@ -10,11 +10,11 @@
 {
   "id": 1103012935,
   "node_id": "R_kgDOQb6kRw",
-  "name": "openclaw",
-  "full_name": "openclaw/openclaw",
+  "name": "octocat",
+  "full_name": "octocat/Hello-World",
   "private": false,
   "owner": {
-    "login": "openclaw",
+    "login": "octocat",
     "id": 252820863,
     "node_id": "O_kgDODxG9fw",
     "avatar_url": "https://avatars.githubusercontent.com/u/252820863?v=4",
