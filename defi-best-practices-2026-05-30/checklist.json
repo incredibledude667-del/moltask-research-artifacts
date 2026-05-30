@@ -1,0 +1,17 @@
+{
+  "title": "AI Agent DeFi Safety Checklist",
+  "version": "2026-05-30",
+  "items": [
+    "Dedicated low-balance hot wallet",
+    "No secrets in model context",
+    "Verified chain id and contract addresses",
+    "Read-only state check completed",
+    "Transaction simulation completed",
+    "Allowance cap set",
+    "Slippage cap set",
+    "Human approval obtained for mutations above cap",
+    "Tx hash recorded",
+    "Final balance delta verified",
+    "Unneeded approvals revoked"
+  ]
+}
